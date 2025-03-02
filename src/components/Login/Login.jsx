@@ -50,7 +50,7 @@ export default function Login() {
 
   return <>
  
-  <h2 className='fomt-bold text-2xl text-center my-4 text-emerald-700'>Login Now</h2>
+  <h2 className='font-bold text-2xl text-center my-4 text-emerald-700'>Login Now</h2>
 <form onSubmit={formik.handleSubmit} className="max-w-md mx-auto">
   <div className="relative z-0 w-full mb-5 group">
       <input type="email" name="email" value={formik.values.email} onChange={formik.handleChange} onBlur={formik.handleBlur} id="floating_email" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-emerald-600 peer" placeholder=" " required />
