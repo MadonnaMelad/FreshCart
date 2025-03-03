@@ -105,7 +105,7 @@ export default function ProductDetails() {
 
   <div className='row justify-center gap-4'>
     {relatedProducts.length>0? relatedProducts.map((product)=>(
-      <div key={product.id} className='w-1/6'>
+        <div key={product.id} className='w-full sm:w-1/2 md:w-1/3 lg:w-1/6'>
         <div className='product pb-7'>
         <Link to={`/productdetails/${product.id}/${product.category.name}`}>
           <img src={product.imageCover} className='w-full' alt="" />

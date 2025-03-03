@@ -73,8 +73,8 @@ export default function Products() {
     return(
     <div className='row justify-center gap-4'>
       {data.map((product)=>(
-        <div key={product.id} className='w-1/6'>
-          <div className='product pb-7'>
+        <div key={product.id} className='w-full sm:w-1/2 md:w-1/3 lg:w-1/6'>
+        <div className='product pb-7'>
           <Link to={`${location.pathname}productdetails/${product.id}/${product.category.name}`}>
             <img src={product.imageCover} className='w-full' alt="" />
             <h3 className='text-emerald-600'>{product.category.name}</h3>
